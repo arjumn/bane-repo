@@ -1,0 +1,39 @@
+/*
+ * Author: Arjune
+ * This CSS file has styles corresponding to auto-complete
+ */
+
+#result {
+    height: 100px;
+    margin-top: 20px;
+}
+
+#_search { width: 200px;}
+#ac {
+    width: 206px;
+    position: absolute;
+    background: white;
+    top: 142px;
+    left: 180px;
+    box-shadow: 0 2px 10px grey;
+}
+ul{
+    margin: 0;
+    padding: 10px 0;
+}
+ul li{
+    list-style-type: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+
+ul li:hover {
+    background: #E8E8E8;
+    cursor: pointer;
+}
+
+ul li span {
+    display: inline-block;
+    padding: 
+}

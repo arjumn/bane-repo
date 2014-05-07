@@ -1,0 +1,26 @@
+div.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-transition: all 2s ease;
+}
+div.box:hover {
+
+    background-color: green;
+    width: 150px;
+}
+
+.elm {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+.elm:nth-of-type(odd) {
+    background-color: blue;
+}
+
+.elm:nth-of-type(6) {
+    background-color: black;
+    border-radius: 10px;
+}
