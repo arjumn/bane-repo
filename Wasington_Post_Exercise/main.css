@@ -1,0 +1,124 @@
+/*
+ * This is the main css file. Uses CSS2/CSS3.
+ * Author: Arjune
+ */
+
+body {
+    max-width: 70%;
+    margin: 0 auto;
+    background: #303030;
+    font-family: Arial, 'Lucida sans';
+}
+
+a, a:link, a:visited {
+    color: blue;
+}
+
+article { margin-bottom: 20px;}
+
+header#header{
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+}
+
+#header h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#header h6 {
+    max-width: 455px;
+    padding: 10px 0;
+    border-top: 1px solid #C0C0C0;
+    color: #C0C0C0;
+}
+
+#searchbox {
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 24px;
+}
+
+#searchbox #_search {
+    width: 50%;
+    height: 20px;
+}
+
+.redbrdr {
+    border: 1px solid red;
+}
+
+div#results, div#viewitem{
+    width: 100%;
+    background: #fff;
+    margin: 30px 0 10px 0;
+    padding: 10px;
+    border-radius: 3px;
+	display: none;
+}
+
+h1.title {
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 8px;
+}
+
+h1.qtitle {
+    font-size: 25px;
+    color: black;
+	font-weight: bold;
+    margin-bottom: 8px;
+}
+
+p.subtitle {
+    font-size: 14px;
+    color: grey;
+    margin-top: 5px;
+}
+
+p.subtitle span {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+p.subtitle span.first {
+    margin-left: 0px;
+}
+
+header.qaheader {
+    margin-bottom: 10px;
+}
+
+div.pag {
+    width: 100%;
+	display: none;
+}
+
+div.pag  a{
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a#prev {
+    margin-right: 10px;
+}
+
+div.answers {
+	margin-top: 30px;
+}
+
+div#answers > h1 {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+div.answers article {
+	padding-bottom: 10px;
+	border-bottom: 1px solid grey;
+}

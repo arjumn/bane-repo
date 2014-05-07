@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Stack Exchange API Implementation</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>Searching Answers</h1>
+        <h6>Easiest way to get the answer you want</h6>
+    </header>
+    <div id="mainContent">
+        <div id="searchbox">
+            <label for="_search">Please enter words to search</label>
+            <input type="text" id="_search" />
+            <button id="_searchbtn">Click here</button>
+        </div>
+        
+        <div id="results"></div>
+        <div class="pag">
+            <a href="#" id="next">Next 10&nbsp;&gt;</a>
+            <a href="#" id="prev">&lt;&nbsp;Prev 10</a>
+        </div><br/>
+        <input type="hidden" id="hidden" value="1">
+		
+		<br/><br/>
+		<div id="viewitem"></div>
+    </div>
+    
+    <footer id="footer"></footer>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
