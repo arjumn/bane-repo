@@ -1,0 +1,62 @@
+/*
+ * Author: Arjune
+ */
+
+body {
+    max-width: 1200px;
+    background-color: #F0F0F0;
+    margin: 0 auto;
+}
+
+#main-header {
+    height: 150px;
+    width: 100%;
+}
+
+#container {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #F8F8F8;
+    border-radius: 20px;
+    padding-left: 30px;
+}
+
+nav#menu {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;    
+}
+
+nav#menu ul {
+    
+}
+
+nav#menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 60px;
+    padding: 13px;
+    color: #f71570;
+    background-color: #e6e6e6;
+    box-shadow: 1px 1px 1px #F0F0F0;
+    margin: 0 10px;
+    text-align: center;
+    border: 1px solid;
+    border-color: #fff #c9c9c9 #c9c9c9 #fff;
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+    font-size: 1.3em;
+    text-shadow: 0 1px 0 #fff;
+}
+
+nav#menu li.active {
+    background-color: #f71570;
+    background-image: -webkit-linear-gradient(top, #f950ab, #f71570 100%);
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    text-shadow: 0 1px 0 #f71570;
+}
+
+nav#menu li:hover, nav#menu li.active:hover {
+    border-radius: 0 10px 0 10px;
+    cursor: pointer;
+}

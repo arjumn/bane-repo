@@ -119,8 +119,73 @@ function longest_palindrome(str) {
         }
     }
     
-    console.log("LOngest palindrome is " + str.substring(index, longest+index));
+    console.log("Longest palindrome is " + str.substring(index, longest+index));
 }
 
-longest_palindrome("abbcbbbc")
+//longest_palindrome("abbcbbbc")
 
+/*
+ * All possible permutations of an array
+ */
+function permutations(arr, index, len) {
+    var j; 
+    if (index == len)
+        console.log(arr.join(""));
+    else {
+        for (j = index; j <= len; j++) {
+            swap(arr, index, j);
+            permutations(arr, index+1, len);
+            swap(arr, index, j);
+        }
+    }
+} 
+
+function swap(arr, i, j) {
+    var temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
+
+//permutations([1,2,3], 0, 2);
+
+
+/* This function will be given a list of words (such as might be tokenized from a paragraph of text), and takes two
+ * words and returns the shortest distance (in words) between those two words in the provided text. 
+ * Example:
+ *   shortest_distance_words(["the", "quick", "brown" "fox", "quick"], "fox","the") == 3
+ *   shortest_distance_words(["the", "quick", "brown" "fox", "quick"], "quick","fox") == 1
+ */
+
+function shortest_distance_words(arr, word1, word2) {
+    var i = 0, len = arr.length, index1 = -1, index2 = len, distance = Math.abs(index1 - index2);
+    if (len < 1) return -1;   
+    if (word1 == word2) return 0;
+    
+    while(i < len) {
+        if (arr[i] == word1) {
+            if(index1 == -1)
+                index1 = i;
+            else if (Math.abs(i - index2) < distance) {
+                index1 = i;
+            }
+            distance = Math.abs(index1 - index2);
+        }            
+        if (arr[i] == word2) {
+            if (index2 == len) {
+                index2 = i;
+            }
+            else if (Math.abs(i - index1) < distance) {
+                index2 = i;
+            }
+            distance = Math.abs(index1 - index2);
+        }
+        i++;
+    }
+    if (distance > len) {
+        return -1;
+    }
+    return distance;
+}
+
+console.log(shortest_distance_words(["the", "quick", "brown", "fox", "quick"], "fox","the"));
+console.log(shortest_distance_words(["the", "quick", "brown", "fox", "quick"], "quick","fox"));
