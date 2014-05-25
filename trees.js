@@ -20,6 +20,14 @@ function BST() {
         root = node;
     }
 
+    this.createTree = function(arr) {
+        var i = 0, len = arr.length, nd = null;
+        for(var i = 0; i < len; i++) {
+            nd = new Node(arr[i]);
+            this.addNewNode(nd);
+        }    
+    }
+    
     this.addNewNode = function(node) {
         var temp = root;
         if (temp == null) {
@@ -47,7 +55,7 @@ function BST() {
             return;
         }
         
-        console.log(node.getValue());
+        document.write(node.getValue() + ", ");
         this.preOrderTraversal(node.left);
         this.preOrderTraversal(node.right);
     }
@@ -67,31 +75,70 @@ function BST() {
         }
         this.postOrderTraversal(node.left);
         this.postOrderTraversal(node.right);
-        console.log(node.getValue());
+        document.write(node.getValue() + ", ");
+    }
+    
+    this.breadthFirstSearch = function() {
+        var queue = [], node = root;
+        queue.push(root);
+        while(queue.length > 0) {
+            node = queue.shift();
+            if (node.left != null) queue.push(node.left);
+            if (node.right != null) queue.push(node.right);
+            document.write(node.getValue() + ", ");
+        }
+    }
+    
+    this.preOrderTraversalIterative = function() {
+        var stack = [], node = root;
+        if (node == null) {
+            return;
+        }
+        stack.push(node);
+        while(stack.length > 0) {
+            node = stack.pop();
+            if (node.right != null) stack.push(node.right);
+            if (node.left != null) stack.push(node.left);
+            document.write(node.getValue() + ", ");
+        }
+    }
+
+    this.inOrderTraversalIterative = function() {
+        var stack = [], parent = root, node = null;
+        if (parent == null) {
+            return;
+        }
+        
+        stack.push(node);
+        if (node.left != null) stack.push(node.left);
+
+        while(stack.length > 0) {
+            node = stack.pop();
+            if (node.right != null) stack.push(node.right);
+            if (node.left != null) stack.push(node.left);
+            document.write(node.getValue() + ", ");
+        }
+    }
+    
+    this.getDepth = function(node) {
+        var leftd = 0, rightd = 0;
+        if (node == null) {
+            return 0;
+        }
+        leftd = this.getDepth(node.left);
+        rightd = this.getDepth(node.right);
+        if (leftd > rightd) return leftd +1;
+        else return rightd + 1;
     }
 }
 
 var tree = new BST();
-var nd = new Node(7);
-tree.addNewNode(nd);
-nd = new Node(1);
-tree.addNewNode(nd);
-nd = new Node(0);
-tree.addNewNode(nd);
-nd = new Node(9);
-tree.addNewNode(nd);
-nd = new Node(8);
-tree.addNewNode(nd);
-nd = new Node(10);
-tree.addNewNode(nd);
-nd = new Node(3);
-tree.addNewNode(nd);
-nd = new Node(5);
-tree.addNewNode(nd);
-nd = new Node(2);
-tree.addNewNode(nd);
-nd = new Node(4);
-tree.addNewNode(nd);
-nd = new Node(6);
-tree.addNewNode(nd);
-tree.postOrderTraversal(tree.getRoot());
+tree.createTree([7,4,10, 2, 8, 1, 3, 11, 14]);
+document.write("<h4>Breadth First Traversal </h4>");
+tree.breadthFirstSearch();
+document.write("<h4>Pre Order Traversal </h4>");
+tree.preOrderTraversal(tree.getRoot());
+document.write("<h4>Pre Order Traversal Iterative</h4>");
+tree.preOrderTraversalIterative();
+document.write("<h4>Depth</h4>");
+document.write(tree.getDepth(tree.getRoot()));

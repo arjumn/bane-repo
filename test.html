@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-
 <html>
-<head>
-    <title>Simple code testing</title>
-</head>
-
-<body>
-
-<script type="text/javascript" src="js_coding.js"></script>
-<!-- <script type="text/javascript" src="trees.js"></script> -->
-
-</body>
+    <head>
+        <title>Testing basic</title>
+    </head>
+    
+    <body>
+        <p>This is what I want</p>
+    </body>
+    
+    <script type="text/javascript">
+        var p = document.getElementsByTagName("p");
+        p[0].onclick = function() {
+            alert(this.textContent);
+        }
+        
+        console.log(5*1.015);
+    </script>
 </html>

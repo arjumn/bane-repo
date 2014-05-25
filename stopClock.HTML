@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Stop Watch</title>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style type="text/css">
+        div {
+            margin: 50px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+<div>
+    <span id="hours">00</span>:
+    <span id="minutes">00</span>:
+    <span id="seconds">00</span>
+    <br/>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</div>
+
+<script>
+    $(document).ready(function(){
+        var hours = $("#hours"),
+            minutes = $("#minutes"),
+            seconds = $("#seconds"),
+            timer, secs, hrs, mins;
+
+
+    $("#start").click(function(){
+        if ($(this).text() == "Pause") {
+            $(this).text("Start");
+            clearTimeout(timer);
+        }
+        else {
+            runClock();
+            $(this).text("Pause");
+        }
+    });
+
+    $("#stop").click(function(){
+        clearTimeout(timer);
+        $("#start").text("Start");
+        
+        hours.text("00");
+        minutes.text("00");
+        seconds.text("00");
+    });
+
+    function runClock() {
+        timer = setTimeout(function(){
+            secs = parseInt(seconds.text());
+            mins = parseInt(minutes.text());
+            hrs = parseInt(hours.text());
+               
+            if (secs+1 == 60) {
+                seconds.text("00");
+                if (mins+1 == 60) {
+                    minutes.text("00");
+                    if (hrs+1 == 24) {
+                        hours.text(hrs+1);
+                        clearTimeout(timer);
+                        return;
+                    }
+                    else
+                        increment(hours, hrs);
+                }
+                else
+                    increment(minutes, mins);
+           }
+           else
+                increment(seconds, secs);
+                
+                
+           runClock(); 
+        }, 1000);
+    }
+    
+    function increment(item, curr_val) {
+        curr_val++;
+        if (curr_val < 10) {
+            item.text("0" + curr_val);
+        }
+        else
+            item.text(curr_val);
+    }
+});
+    
+</script>        
+</body>
+</html>
