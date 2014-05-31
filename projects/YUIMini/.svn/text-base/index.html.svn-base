@@ -1,0 +1,40 @@
+<HTML>
+	<head>
+		<script src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+		<script src="ourscript.js"></script>
+		<style type="text/css">
+      	div.contracted {
+      		padding: 3px 10px 5px 30px;
+      		background-image: url('plusButton.png');
+				background-position:left top;
+				background-repeat: no-repeat;
+				cursor:pointer
+      	}
+      	
+      	div.expanded {
+      		padding: 3px 10px 5px 30px;
+      		background-image: url('minusButton.png');
+				background-position:left top;
+				background-repeat: no-repeat;
+				cursor:pointer
+      	}
+      	
+      	div.extrainfo{
+      		padding-left: 15px;
+      		cursor: default
+      	}
+      	#wikiname{
+      		width:300px;
+      	}
+   	</style>
+
+	</head>
+	
+	<body>
+		<h3>Please enter the name of the wikipedia page that you want to get information about.</h3>
+		<input type="text" id="wikiname"/>
+		<input type="button" id="wikisub" value="Retrieve Data!"/>
+		<br/><br/><br/>
+		<div id="responseDiv"></div>			
+	</body>
+</HTML>

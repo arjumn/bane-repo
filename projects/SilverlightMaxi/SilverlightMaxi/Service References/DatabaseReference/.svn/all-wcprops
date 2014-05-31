@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/64/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference
+END
+Reference.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/64/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/Reference.cs
+END
+DatabaseService.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/DatabaseService.xsd
+END
+DatabaseService1.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/64/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/DatabaseService1.xsd
+END
+DatabaseService2.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/61/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/DatabaseService2.xsd
+END
+DatabaseService.disco
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/DatabaseService.disco
+END
+Reference.svcmap
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/Reference.svcmap
+END
+configuration91.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/configuration91.svcinfo
+END
+SilverlightMaxi.DatabaseReference.InitialData.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/SilverlightMaxi.DatabaseReference.InitialData.datasource
+END
+SilverlightMaxi.DatabaseReference.FilterValues.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/SilverlightMaxi.DatabaseReference.FilterValues.datasource
+END
+configuration.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/configuration.svcinfo
+END
+DatabaseService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/DatabaseService.wsdl
+END
+DatabaseService1.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi/Service%20References/DatabaseReference/DatabaseService1.wsdl
+END

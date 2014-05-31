@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="SilverlightMini.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data" Height="536" Width="810" xmlns:my="clr-namespace:SilverlightMini">
+
+    <Grid x:Name="LayoutRoot" Background="White" Height="533" Width="811">
+        <data:DataGrid AutoGenerateColumns="True" Height="400" HorizontalAlignment="Left" Margin="40,40,0,0" Name="dataGridFrom" VerticalAlignment="Top" Width="300" CanUserReorderColumns="False" CanUserResizeColumns="False" DataContext="{Binding}" ColumnWidth="Auto" Grid.RowSpan="2" IsReadOnly="False">
+        </data:DataGrid>
+        <StackPanel Height="Auto" HorizontalAlignment="Center" Margin="7,137,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="92">
+            <Button Content="Add &gt;" Height="23" Name="buttonAdd" Width="75" Click="buttonAdd_Click" />
+            <Button Content="Add All &gt;&gt;" Height="23" Name="buttonAddAll" Width="75" Click="buttonAddAll_Click" />
+        </StackPanel>
+        <StackPanel Height="Auto" HorizontalAlignment="Center" Margin="7,270,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="Auto" Grid.Row="1">
+            <Button Content="&lt; Remove" Height="23" Name="buttonRemove" Width="95" Click="buttonRemove_Click" />
+            <Button Content="&lt;&lt; Remove All" Height="24" Name="buttonRemoveAll" Width="95" Click="buttonRemoveAll_Click" />
+        </StackPanel>
+        <data:DataGrid AutoGenerateColumns="True" CanUserReorderColumns="False" CanUserResizeColumns="False" Height="400" HorizontalAlignment="Right" Margin="0,40,40,0" Name="dataGridTo" VerticalAlignment="Top" Width="300" Grid.RowSpan="2"></data:DataGrid>
+        <my:AddPanel Height="250" HorizontalAlignment="Left" Margin="226,128,0,0" x:Name="addPanel" VerticalAlignment="Top" Width="375" Visibility="Collapsed" BorderBrush="Black" />
+        <Button Content="+" Height="23" HorizontalAlignment="Left" Margin="299,446,0,0" Name="addNewButton" VerticalAlignment="Top" Width="41" Click="addNewButton_Click" />
+    </Grid>
+</UserControl>

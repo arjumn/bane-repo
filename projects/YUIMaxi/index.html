@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+	<head>
+		<title>YUI Maxi - Three Prime Evils</title>
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssgrids/grids-min.css">
+		<script src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js" charset="utf-8"></script>
+		<script src="yuimaxi.js" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="yuimaxi.css">
+	</head>
+	<body class="sectionBody yui3-skin-sam">
+		<div class="pageHeading">Wikitter</div>
+		<div class="yui3-u-1">
+			<div class="info" style="margin-top:-5px">Enter the title of the wikipedia article</div>			
+			<div> 
+				<input id="wikiTitle" type="text" class="width450 paddingLeft40 inputElement" />
+				<input id="wikiButton" type="button" class="button buttonContent" value="Retrive"/> 
+			</div>
+			<div class="error" id="titleError" style="display:none;margin-top:-5px">Please enter the title of the article</div>
+		</div>
+		<br/>
+		<div id="errorMessage" style="display:none" class="error">There was an error in retriving the information.</div>
+		<div id="errorHTML" style="display:none"></div>
+		<div id="pageContents" style="display:none">
+			<div class="sectionHeading" id="title">Title</div>
+			<br/>	
+	   	<div class="paddingTop10 yui3-g">
+	   		<div class="yui3-u-5-8">
+	      		<div class="paddingRight10">
+	      			<div class="subSectionHeading"> Wikipedia </div>
+	      			<div id="wikiData" class="wikiData">
+	 					</div>
+					</div>
+	        	</div>
+	        	<div class="yui3-u-3-8">
+  				<div class="subSectionHeading">Latest News</div>
+              	<div class="refresh">
+               	<a id="newsRefresh" href="javascript:void();">Refresh</a>
+                  <img style="visibility:hidden" src="./loadingsmall.gif" class="refreshLoading" id="loadingNews"/>
+              	</div>
+              	<div id="newsTableError" class="smallError" style="display:none">Error refreshing the information from Google News</div>
+              	<div id="newsTable"></div>
+              	<br />
+               <div class="subSectionHeading">Twitter</div>
+               	<div class="refresh">
+                  	<a id="tweetsRefresh" href="javascript:void();">Refresh</a>
+                     <img style="visibility:hidden" src="./loadingsmall.gif" class="refreshLoading" id="loadingTweets"/>
+              		</div>
+              	<div id="tweetsTableError" class="smallError" style="display:none">Error refreshing the tweets from Twitter</div>
+              	<div class="paraHeading"> Tweets </div>	
+	        		<div id="tweetTable"></div>
+	        		<br />
+	 				<div class="paraHeading"> Trends </div>
+					<div id="chartsWrapper">
+						<div id="charts"></div>
+					</div>
+				</div>
+	    	</div>
+	   </div>
+    	<div id="overlay" style="display:none">
+			 <img src="./loadingblue.gif"/>
+    	</div>    	
+	</body>
+</html>

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/SilverlightMaxi/SilverlightMaxi.Web
+END
+DatabaseService.svc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi.Web/DatabaseService.svc
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/64/trunk/SilverlightMaxi/SilverlightMaxi.Web/Web.config
+END
+SilverlightMaxiTestPage.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/57/trunk/SilverlightMaxi/SilverlightMaxi.Web/SilverlightMaxiTestPage.aspx
+END
+User.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi.Web/User.cs
+END
+DatabaseService.svc.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/64/trunk/SilverlightMaxi/SilverlightMaxi.Web/DatabaseService.svc.cs
+END
+SilverlightMaxi.Web.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/62/trunk/SilverlightMaxi/SilverlightMaxi.Web/SilverlightMaxi.Web.csproj
+END
+InitialData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/64/trunk/SilverlightMaxi/SilverlightMaxi.Web/InitialData.cs
+END
+Filter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi.Web/Filter.cs
+END
+Web.Release.config
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/57/trunk/SilverlightMaxi/SilverlightMaxi.Web/Web.Release.config
+END
+SilverlightMaxi.Web.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/57/trunk/SilverlightMaxi/SilverlightMaxi.Web/SilverlightMaxi.Web.csproj.user
+END
+Web.Debug.config
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/57/trunk/SilverlightMaxi/SilverlightMaxi.Web/Web.Debug.config
+END
+Silverlight.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/57/trunk/SilverlightMaxi/SilverlightMaxi.Web/Silverlight.js
+END
+Country.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/60/trunk/SilverlightMaxi/SilverlightMaxi.Web/Country.cs
+END
+Database.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/64/trunk/SilverlightMaxi/SilverlightMaxi.Web/Database.cs
+END
+FilterValues.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/64/trunk/SilverlightMaxi/SilverlightMaxi.Web/FilterValues.cs
+END
+SilverlightMaxiTestPage.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/57/trunk/SilverlightMaxi/SilverlightMaxi.Web/SilverlightMaxiTestPage.html
+END

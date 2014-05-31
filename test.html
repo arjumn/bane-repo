@@ -8,11 +8,99 @@
     </body>
     
     <script type="text/javascript">
-        var p = document.getElementsByTagName("p");
-        p[0].onclick = function() {
-            alert(this.textContent);
-        }
+        var LFUCache = (function(){
+            var instance;
+            function init() {
+                var cache = {}, SIZE = 5, curr_size = 0;
+                
+                return {
+                    removeItem : function() {
+                        var least = 100, least_key;
+                        for(var key in cache) {
+                            if (cache[key] < least) {
+                                least = cache[key];
+                                least_key = key;
+                            }
+                        }
+                        console.log("Removing url " + least_key + " with a hit count of " + cache[least_key]);
+                        delete cache[least_key];
+                        curr_size--;
+                    },
+
+                    addItem : function(url) {
+                        if (!cache[url] && !cache.hasOwnProperty(url)) {
+                            if (curr_size >= SIZE) {
+                                this.removeItem();
+                            }
+                            cache[url] = 1;
+                            curr_size++;
+                        }
+                        else {
+                            cache[url] += 1;
+                        }
+                        this.printCache();
+                    },
+                    
+                    isItemInCache : function(url) {
+                        if (cache[url] && cache.hasOwnProperty(url)) {
+                            return true;
+                        }
+                        return false;
+                    },
+                    
+                    printCache : function() {
+                        for(var key in cache) {
+                            console.log("Key: " + key + ", value: " + cache[key]);
+                        }
+                        console.log("dddd");
+                    }
+                }
+            }
+            
+            return {
+                getInstance : function() {
+                    if (!instance) {
+                        instance = init();
+                    }
+                    return instance;
+                }
+            }
+        })();
         
-        console.log(5*1.015);
+        
+        var cc = LFUCache.getInstance();
+        cc.addItem("www.abc1.com");
+        cc.addItem("www.abc1.com");
+        cc.addItem("www.abc2.com");
+        cc.addItem("www.abc3.com");
+        cc.addItem("www.abc4.com");
+        cc.addItem("www.abc5.com");
+        cc.addItem("www.abc2.com");
+        cc.addItem("www.abc2.com");
+        cc.addItem("www.abc4.com");
+        cc.addItem("www.abc5.com");
+        cc.addItem("www.abc4.com");
+        cc.addItem("www.abc5.com");
+        cc.addItem("www.abc1.com");
+        cc.addItem("www.abc7.com");
+        cc.addItem("www.abc6.com");
+        cc.addItem("www.abc7.com");
+        cc.addItem("www.abc3.com");
+        cc.addItem("www.abc1.com");
+        cc.addItem("www.abc3.com");
+        cc.addItem("www.abc8.com");
+        cc.addItem("www.abc2.com");
+        cc.addItem("www.abc1.com");
+        cc.addItem("www.abc1.com");
+        cc.addItem("www.abc1.com");
+        cc.addItem("www.abc4.com");
+        cc.addItem("www.abc3.com");
+        cc.addItem("www.abc5.com");
+        cc.addItem("www.abc4.com");
+        cc.addItem("www.abc2.com");
+        cc.addItem("www.abc1.com");
+        cc.addItem("www.abc4.com");
+        
+            
     </script>
 </html>

@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_DatabaseService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:49417/DatabaseService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_DatabaseService"
+                contract="DatabaseReference.DatabaseService" name="CustomBinding_DatabaseService" />
+        </client>
+    </system.serviceModel>
+</configuration>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SilverlightMaxi.Web" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SilverlightMaxi.Web" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="InitialData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="countries" nillable="true" type="tns:ArrayOfCountry" />
+      <xs:element minOccurs="0" name="filters" nillable="true" type="tns:ArrayOfFilter" />
+      <xs:element minOccurs="0" name="greennessValues" nillable="true" type="tns:ArrayOfFilterValues" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InitialData" nillable="true" type="tns:InitialData" />
+  <xs:complexType name="ArrayOfCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Country" nillable="true" type="tns:Country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountry" nillable="true" type="tns:ArrayOfCountry" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Lat" type="xs:double" />
+      <xs:element minOccurs="0" name="Lon" type="xs:double" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="ArrayOfFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Filter" nillable="true" type="tns:Filter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFilter" nillable="true" type="tns:ArrayOfFilter" />
+  <xs:complexType name="Filter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="endYear" type="xs:int" />
+      <xs:element minOccurs="0" name="startYear" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Filter" nillable="true" type="tns:Filter" />
+  <xs:complexType name="ArrayOfFilterValues">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FilterValues" nillable="true" type="tns:FilterValues" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFilterValues" nillable="true" type="tns:ArrayOfFilterValues" />
+  <xs:complexType name="FilterValues">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" type="xs:double" />
+      <xs:element minOccurs="0" name="Year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FilterValues" nillable="true" type="tns:FilterValues" />
+</xs:schema>

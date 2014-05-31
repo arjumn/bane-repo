@@ -429,3 +429,68 @@ output("", [1,2,3,4,5,6], rotateArray([1,2,3,4,5,6], 0));
 output("", [1,2,3,4,5,6], rotateArray([1,2,3,4,5,6], 5));
 output("", [1,2,3,4,5,6], rotateArray([1,2,3,4,5,6], 6));
 output("", [1,2], rotateArray([1,2], 1));
+
+/*
+ * Given a number in a string format, implement an incrementor
+ */
+
+function incrementNumber(str) {
+    var i = 0, len = str.length, num_arr;
+    if (len < 1) return str;
+    num_arr = str.split(".");
+    if (num_arr[0] == "") {
+        num_arr[0] = "1";
+    }
+    else
+        num_arr[0] = parseInt(num_arr[0]) + 1 + "";
+        
+    return num_arr.join(".");
+}
+
+output("Given a number in a string format, implement an incrementor",
+       "123", incrementNumber("123"));
+
+output("", "123.345", incrementNumber("123.345"));
+output("", ".345", incrementNumber(".345"));
+output("", "-123.345", incrementNumber("-123.345"));
+
+/*
+ * Binary search
+ */
+
+function search(arr, n) {
+    var len = arr.length;
+    if (len == 0) {
+        return -1;
+    }
+    
+    else
+        return binarySearch(arr, n, 0, len-1);
+}
+
+function binarySearch(arr, n, start, end) {
+    if (start > end) return -1;
+    
+    var mid = parseInt((start + end)/2);
+    if (n == arr[mid]) {
+        return mid;
+    }
+    
+    if (n > arr[mid]) {
+        return binarySearch(arr, n, mid+1, end);
+    }
+    
+    if (n < arr[mid]) {
+        return binarySearch(arr, n, start, mid-1);
+    }
+    return -1;
+}
+
+output("Binary Search", [1,2,3,4,5,6,7,8], search([1,2,3,4,5,6,7,8], 7));
+output("", [1,2,3,4,5,6,7,8], search([1,2,3,4,5,6,7,8], 3));
+output("", [1,2,3,4,5,6,7,8], search([1,2,3,4,5,6,7,8], 9));
+
+
+/*
+ * 
+ */

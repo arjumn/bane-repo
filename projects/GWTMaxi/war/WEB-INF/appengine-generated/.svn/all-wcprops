@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/55/trunk/GWTMaxi/war/WEB-INF/appengine-generated
+END
+local_db.bin
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/54/trunk/GWTMaxi/war/WEB-INF/appengine-generated/local_db.bin
+END
+datastore-indexes-auto.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/55/trunk/GWTMaxi/war/WEB-INF/appengine-generated/datastore-indexes-auto.xml
+END

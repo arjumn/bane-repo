@@ -1,0 +1,241 @@
+body {
+        background-color: #ffffff;
+        margin: 0px 0px 15px 10px;
+        color: #555555;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        width:1100px;
+}
+
+body, div, span, ul, li, input, select {
+        color: #555555;
+        font-family: verdana, sans-serif;
+}
+
+.error {
+        color: red;
+        font-weight: bold;
+        font-size: 13px
+}
+
+.smallError {
+        color: red;
+        font-size: 12px
+}
+
+.info {
+        color: green;
+        font-size: 13px
+}
+
+a,a:visited {
+        color: #0860A8;
+        text-decoration: none;
+}
+
+.loading{
+        background-image:url('./loadingblue.gif');
+}
+
+.yui3-js-enabled .yui3-overlay-loading {
+    top:-1000em;
+    left:-1000em;
+    position:absolute;
+}
+
+a:hover {
+        color: #0860A8;
+        text-decoration: underline;
+}
+
+.yui3-skin-sam #newsTable .yui3-datatable-columns{
+        display: none
+}
+
+.yui3-skin-sam #newsTable tr.yui3-datatable-odd {
+        background-color:#edf4fa;
+}
+
+.yui3-skin-sam #newsTable tr.yui3-datatable-even {
+        background-color:#ffffff;
+}
+
+.yui3-skin-sam #tweetTable .yui3-datatable-columns{
+        display: none
+}
+
+.yui3-skin-sam #tweetTable tr.yui3-datatable-odd {
+        background-color:#edf4fa;
+}
+
+.yui3-skin-sam #tweetTable tr.yui3-datatable-even {
+        background-color:#ffffff;
+}
+
+.timestamp{
+        font-weight: bold;
+        font-style:italic;
+        font-size: 12px
+}
+
+.tableWrapper{
+        height: 350px;
+        border: 1px solid black;
+}
+
+.chartsWrapper{
+        width: 390px;
+        height: 350px;
+        border: 1px solid #7f7f7f;
+        padding:10px;
+}
+
+#charts {
+    width: 380px;
+    height: 340px;
+}
+
+.paddingRight10{
+        padding-right: 10px;
+}
+.paddingTop10{
+        padding-top: 10px;
+}
+
+.wikiData{
+        border: 1px solid #7f7f7f;
+        padding:7px;
+}
+
+.publisher{
+        font-weight: bold
+}
+
+.button{ 
+        background-repeat:repeat-x; 
+        background-color:#0806FF; 
+        color:#FFFFFF; 
+        border-width: 2px; 
+        border-color: #FFFFFF; 
+        margin: solid; 
+        font-size:13px; 
+        height:25px; 
+        padding-bottom:4px; 
+        font-weight:bold;
+}
+
+.button:hover{
+        background-color:#0806AA;
+        cursor: pointer
+}
+
+.pageHeading {
+        color: #000000;
+        font-size: 21px;
+        font-weight: normal;
+        line-height: 26px;
+        margin: 0px;
+        padding: 23px 0px 23px 0px;
+}
+
+.sectionHeadingText { 
+        color: #000000; 
+        font-size: 12px; 
+}
+
+.sectionHeading { 
+        color: #000000; 
+        font-size: 15px; 
+        font-weight: bold;
+        border-bottom-style: solid; 
+        border-bottom-width: 1px; 
+        border-color: #bababa; 
+        margin-bottom: 4px; 
+        padding-bottom: 4px; 
+}
+
+.refresh {
+        text-align: right;
+        margin-top:-36px;
+        font-size: 12px;
+        margin-bottom: 4px;
+        padding-bottom: 4px;
+}
+
+.refreshLoading {
+        margin-bottom: -15px;
+}
+
+.subSectionHeading { 
+        color: #000000; 
+        font-size: 14px; 
+        font-weight: bold;
+        margin-bottom: 4px; 
+        padding-bottom: 4px; 
+}
+
+.paraHeading {
+		  font-size: 13px; 
+        font-weight: bold;
+        font-style: italic
+}
+
+.title1{
+        color: #000000; 
+        font-size: 13px; 
+        font-weight: bold;
+}
+
+.title2{
+        color: #000000; 
+        font-size: 12px; 
+        font-weight: bold;
+}
+
+.title3{
+        color: #000000; 
+        font-size: 11px; 
+        font-weight: bold;
+}
+
+.sectionBody, .sectionBodyText { 
+        font-size: 70%; 
+}
+
+.sectionBody { 
+        margin: 0 0 0 15px; 
+        padding: 0 0 15px 0; 
+}
+
+.red {
+        color: red
+}
+
+.inputElement {
+        color: #0860AB;
+        font-size:13px;
+        font-weight:normal;
+}
+
+.width450{
+        width: 450px
+}
+
+.font1 {
+        font-size: 9px;
+}
+
+.font2 {
+        font-size: 10px;
+}
+
+.font3 {
+        font-size: 11px;
+}
+
+.font4 {
+        font-size: 12px;
+}
+
+.font5 {
+        font-size: 13px;
+}
